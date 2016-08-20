@@ -1,8 +1,85 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+
+#main {
+  background-color: #F8F8F8;
 }
 
-a {
-  color: #00B7FF;
+#headerRow {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #000;
+  /*text-align: center;*/
 }
+
+#headerRow h1 {
+  font-size: 49px;
+  font-weight: bold;
+  color: #70AB00;
+  margin-top: 20px;
+}
+
+#headerRow h3 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #70AB00;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+#lastName {
+  color:#898989;
+}
+
+
+#navBar {
+  padding-top: 60px;
+  text-align: right;
+  padding-left: 0px;
+}
+
+.navBarItems {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+}
+
+
+.nav-tabs {
+  background-color: #000;
+  border: none;
+}
+
+.nav-tabs > li > a {
+  /*border: 2px solid red;*/
+  color: #898989;
+  font-size: 13px;
+  /*font-weight: bold;*/
+  text-decoration: none;
+}
+
+
+.nav-tabs > li > a:focus,
+.nav-tabs > li > a:hover {
+  color: #70AB00;
+  background-color: #000;
+  border: 1px solid black;
+  /*border-bottom-color: transparent;*/
+ 
+}
+
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #70AB00;
+  cursor: default;
+  background-color: #000;
+  border: none;
+  border-bottom-color: transparent;
+} 
+
+span.glyphicon-menu-down {
+  font-size: 1.3em;
+}
+
+

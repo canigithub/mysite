@@ -1,5 +1,61 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+
+  div#main.container-fluid
+    div#headerRow.row
+      div.col-lg-4.col-md-5.col-sm-12.col-xs-12.col-lg-offset-2.col-md-offset-1
+        div#headerIntro
+          h1 
+            span Nengyun 
+            span#lastName Zhang
+          h3 Software Developer And Data Engineer
+      div#navBar.col-lg-5.col-md-5.col-sm-12.col-xs-12.col-lg-offset-1.col-md-offset-1(role="navigation")
+        ul.nav.nav-tabs
+          li.active
+            a(href='#Home' data-toggle='tab') 
+              div.navBarItems HOME
+                br
+                span.glyphicon.glyphicon-menu-down(style='horizontal-align:middle')
+                
+          li
+            a(href='#Resume' data-toggle='tab') 
+              div.navBarItems RESUME
+                br
+                span.glyphicon.glyphicon-menu-down(style='horizontal-align:middle')
+          li
+            a(href='#Projects' data-toggle='tab') 
+              div.navBarItems PROJECTS
+                br
+                span.glyphicon.glyphicon-menu-down(style='horizontal-align:middle')
+          li
+            a(href='#Contact' data-toggle='tab') 
+              div.navBarItems CONTACT
+                br
+                span.glyphicon.glyphicon-menu-down(style='horizontal-align:middle')
+
+  div.tab-content.well
+    div#Home.tab-pane.fade.in.active
+      a(href='#') home
+      span.icon-bar
+      br
+      img(src='images/fry.jpg' alt='...')
+
+    div#Resume.tab-pane.fade
+      a(href='#') resume
+      br
+      img(src='images/ntt-logo.png' alt='...')
+
+    div#Projects.tab-pane.fade
+      a(href='#') projects
+      img(src='images/netsci_lcc1.png' alt='...')
+
+    div#Contact.tab-pane.fade
+      a(href='#') contact
+      img(src='images/197x148.gif' alt='...')
+
+
+
+  
+
+                
