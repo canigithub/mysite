@@ -1,61 +1,122 @@
 extends layout
 
 block content
+  
+  div#pageTop.container-fluid
+    nav#myNavbar.navbar.navbar-default.navbar-fixed-top
+      div.container
+        div.navbar-header.page-scroll
+          button#myButton.navbar-toggle(type='button', data-toggle='collapse' data-target='#myTopNavbar')
+            span.sr-only Navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand.pull-left(href='#pageTop')
+            div#myName 
+                b Nengyun Zhang
+            //- div#myPosition Software Developer And Data Engineer
 
-  div#main.container-fluid
-    div#headerRow.row
-      div.col-lg-4.col-md-5.col-sm-12.col-xs-12.col-lg-offset-2.col-md-offset-1
-        div#headerIntro
-          h1 
-            span Nengyun 
-            span#lastName Zhang
-          h3 Software Developer And Data Engineer
-      div#navBar.col-lg-5.col-md-5.col-sm-12.col-xs-12.col-lg-offset-1.col-md-offset-1(role="navigation")
-        ul.nav.nav-tabs
-          li.active
-            a(href='#Home' data-toggle='tab') 
-              div.navBarItems HOME
-                br
-                span.glyphicon.glyphicon-menu-down(style='horizontal-align:middle')
+        div#myTopNavbar.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.active
+              a(href='#Home' data-toggle='tab')
+                div.navBarItems HOME
                 
-          li
-            a(href='#Resume' data-toggle='tab') 
-              div.navBarItems RESUME
-                br
-                span.glyphicon.glyphicon-menu-down(style='horizontal-align:middle')
-          li
-            a(href='#Projects' data-toggle='tab') 
-              div.navBarItems PROJECTS
-                br
-                span.glyphicon.glyphicon-menu-down(style='horizontal-align:middle')
-          li
-            a(href='#Contact' data-toggle='tab') 
-              div.navBarItems CONTACT
-                br
-                span.glyphicon.glyphicon-menu-down(style='horizontal-align:middle')
+            li
+              a(href='#Resume' data-toggle='tab')
+                div.navBarItems RESUME
+                
+            li
+              a(href='#Projects' data-toggle='tab')
+                div.navBarItems PROJECTS
 
-  div.tab-content.well
-    div#Home.tab-pane.fade.in.active
-      a(href='#') home
-      span.icon-bar
-      br
-      img(src='images/fry.jpg' alt='...')
-
-    div#Resume.tab-pane.fade
-      a(href='#') resume
-      br
-      img(src='images/ntt-logo.png' alt='...')
-
-    div#Projects.tab-pane.fade
-      a(href='#') projects
-      img(src='images/netsci_lcc1.png' alt='...')
-
-    div#Contact.tab-pane.fade
-      a(href='#') contact
-      img(src='images/197x148.gif' alt='...')
-
-
+            li
+              a(href='#Contact' data-toggle='tab')
+                div.navBarItems CONTACT
 
   
 
-                
+  //- div#myContentContainer
+  div#myContentTop.tab-content.well(style='margin:0 auto; background-color: transparent')
+    div#Home.tab-pane.fade.in.active
+      div.container
+        div.row
+          div.col-xs-12.col-sm-6.col-md-4.col-lg-4(style='padding: 0px')
+            img.media-object(src='images/myport_2.jpg' alt='my photo...' style='max-width: 320px; height: auto;')
+          div.col-xs-12.col-sm-6.col-md-4.col-lg-4.col-md-offset-1(style='padding: 0px')
+            h1(style='font-size: 40px; margin-top: 0px;')
+              b Welcome Visitor,
+            hr(size='50')
+            h4 
+              b I
+              | 'm a Software Developer,
+            h4 
+              b A
+              | nd a Web Developer,  
+            h4 
+              b A
+              | nd a Data Engineer,
+            h3(style='font-size: 22px;')
+              b A
+              | nd I'm excited to work!
+            br
+
+            p Email: gregoryfullstack@gmail.com
+            p Cell: (720) 393-0168
+            p(style='margin-bottom: 0px') LinkedIn: 
+            a(href='www.linkedin.com/in/nengyun-zhang-88715841') www.linkedin.com/in/nengyun-zhang-88715841
+
+      br
+      hr
+
+      div.container(style='text-align: center; width: 90%')
+        div.row
+          div.col-xs-12.col-sm-4.col-md-4.col-lg-4
+            h4(style='font-weight: normal') RECENT AWARDS
+            div.smallSection
+              p ECE's Spring 2016 Outstanding Graduate Teaching Assistant
+
+          div.col-xs-12.col-sm-4.col-md-4.col-lg-4
+            h4(style='font-weight: normal') FAVORITE QUOTE
+            div.smallSection
+              p(style='text-align: left') As soon as you trust yourself, you will know how to live.
+              p(style='font-size: 13px; float: right') — Johann Wolfgang von Goethe
+
+          div.col-xs-12.col-sm-4.col-md-4.col-lg-4
+            h4(style='font-weight: normal;') RECENT PROJECTS
+            div.smallSection
+              ul(style='text-align: left; font-size: 13px;')
+                li Awesome DAVIS :-)
+                  br
+                  b da
+                  | ta 
+                  b vis
+                  |ualization of 
+                  a(href='https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn') GHCN from NOAA
+                li Detect Community Structure in Social Networks
+
+
+
+
+    div#Resume.tab-pane.fade
+      p this is resume
+
+    div#Projects.tab-pane.fade
+      p this is projects
+      
+    div#Contact.tab-pane.fade
+      p this is contact
+
+
+    //- div#myContentMiddle.tab-content(style='margin:0 auto')
+    //-   div#Home.tab-pane.fade.in.active
+
+
+    //-   div#Resume.tab-pane.fade
+ 
+        
+    //-   div#Projects.tab-pane.fade
+        
+
+    //-   div#Contact.tab-pane.fade
+

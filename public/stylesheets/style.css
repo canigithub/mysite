@@ -1,85 +1,54 @@
 
-
-#main {
-  background-color: #F8F8F8;
+#myNavbar {
+  height: 60px;
 }
 
-#headerRow {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #000;
-  /*text-align: center;*/
+#pageTop {
+  height: 80px;
 }
 
-#headerRow h1 {
-  font-size: 49px;
+#myName {
+  font-size: 40px;
   font-weight: bold;
-  color: #70AB00;
-  margin-top: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-#headerRow h3 {
-  font-size: 18px;
-  font-weight: 300;
-  color: #70AB00;
+#myPosition {
+  font-size: 15px;
+  font-weight: normal;
+  margin-top: 15px;
+}
+
+#myButton {
   margin-top: 10px;
-  padding-bottom: 10px;
 }
 
-#lastName {
-  color:#898989;
+#myTopNavbar {
+  margin-top: 5px;
 }
 
-
-#navBar {
-  padding-top: 60px;
-  text-align: right;
-  padding-left: 0px;
-}
-
-.navBarItems {
-  text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 0px;
+.well {
+  max-width: 900px;
 }
 
 
-.nav-tabs {
-  background-color: #000;
-  border: none;
-}
-
-.nav-tabs > li > a {
-  /*border: 2px solid red;*/
-  color: #898989;
-  font-size: 13px;
-  /*font-weight: bold;*/
-  text-decoration: none;
+#myContentTop {
+  width: 90%;
 }
 
 
-.nav-tabs > li > a:focus,
-.nav-tabs > li > a:hover {
-  color: #70AB00;
-  background-color: #000;
-  border: 1px solid black;
-  /*border-bottom-color: transparent;*/
- 
+.smallSection {
+  height: 120px;
+  border: 1px solid #898989;
+  border-radius: 10px;
+  padding: 5px;
+  padding-top: 12px;
+
 }
 
 
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
-  color: #70AB00;
-  cursor: default;
-  background-color: #000;
-  border: none;
-  border-bottom-color: transparent;
-} 
 
-span.glyphicon-menu-down {
-  font-size: 1.3em;
+
+#myContentMiddle {
+  width: 90%;
 }
-
-
