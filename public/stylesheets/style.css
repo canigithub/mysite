@@ -1,54 +1,184 @@
-
-#myNavbar {
-  height: 60px;
+body {
+  background-color: dimgray;
+  color: floralwhite;
 }
 
-#pageTop {
-  height: 80px;
+a {
+  color: LightSteelBlue;
 }
 
-#myName {
-  font-size: 40px;
-  font-weight: bold;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+#navMenu ul li {
+  padding-right: 20px;
 }
 
-#myPosition {
-  font-size: 15px;
-  font-weight: normal;
-  margin-top: 15px;
+#Home > .container:nth-of-type(2) h5,
+#Home > .container:nth-of-type(3) h5 {
+  text-align: center;
+  /*color: DarkTurquoise;*/
+  color: CornflowerBlue;
+  font-size: 18px;
 }
 
-#myButton {
-  margin-top: 10px;
+#Home > .container:nth-of-type(2) .col-sm-4,
+#Home > .container:nth-of-type(3) .col-sm-4 {
+  min-height: 160px;
 }
 
-#myTopNavbar {
-  margin-top: 5px;
+#Cv h3 {
+  color: wheat;
 }
 
-.well {
-  max-width: 900px;
+#Cv h5 {
+  color: PaleGoldenRod;
+}
+
+#Projects .projItem {
+  /*position: relative;*/
+  right: 0;
+  margin: 0 0 15px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  #Home > .container:nth-of-type(2) .col-sm-4,
+  #Home > .container:nth-of-type(3) .col-sm-4{
+    border: 1px solid gray;
+  }
 }
 
 
-#myContentTop {
-  width: 90%;
+@media screen and (min-width: 1200px) {
+  #Home > .container:nth-of-type(2),
+  #Home > .container:nth-of-type(3) {
+    margin-left: 50px;
+  }
+
+  #Projects .col-lg-10 {
+    margin-left: 10px;
+  }
+
+  #Projects .projItem {
+    padding: 0px;
+    margin: 15px;
+  }
+}
+
+#Projects .projItem h3 {
+  text-align: center;
+  color: Gainsboro;
+  font-size: 20px;
+  height: 40px;
+}
+
+#Projects .projItem .projLink {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+#Projects .projItem .projLink .caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(255,255,255,.5);
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+#Projects .projItem .projLink .caption .caption-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 20px;
+  margin-top: -12px;
+  text-align: center;
+  font-size: 20px
+  color: #fff;
+}
+
+#Projects .projItem .projLink .caption .caption-content i{
+  margin-top: -12px;  
+}
+
+#Projects .projItem .projLink .caption:hover {
+  opacity: 1;
+}
+
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-header {
+  background-color: midnightblue;
+}
+
+.modal-header h3 {
+  text-align: center;
+}
+
+.modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+  background-color: #556677;
+
+}
+
+.modal-footer {
+  text-align:center;
+}
+
+.projModal {
+  width: 75%;
+  height: 100%;
+  margin: auto;
+}
+
+.projDesc {
+  padding: 0 20px;
+}
+
+.projDesc h5 {
+  color: PaleGoldenRod;
+}
+
+.demoImg-sq-left {
+  margin: 10px;
+  float: left;
+  max-width: 300px;
+  height: auto;
 }
 
 
-.smallSection {
-  height: 120px;
-  border: 1px solid #898989;
-  border-radius: 10px;
-  padding: 5px;
-  padding-top: 12px;
 
+.demoImg-sq-left img{
+  
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.imgDesc {
+  padding: 15px;
+  padding-top: 30px;
+  text-align: center;
+  clear: both;
 }
 
 
-
-
-#myContentMiddle {
-  width: 90%;
+.demoImg-rect-left {
+  margin: 10px;
+  float: left;
 }
+
+.demoImg-rect-left img {
+  max-height: 200px;
+  width: auto;
+  border: 1px solid #ccc;
+}
+

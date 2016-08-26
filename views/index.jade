@@ -2,51 +2,42 @@ extends layout
 
 block content
   
-  div#pageTop.container-fluid
-    nav#myNavbar.navbar.navbar-default.navbar-fixed-top
-      div.container
-        div.navbar-header.page-scroll
-          button#myButton.navbar-toggle(type='button', data-toggle='collapse' data-target='#myTopNavbar')
-            span.sr-only Navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand.pull-left(href='#pageTop')
-            div#myName 
-                b Nengyun Zhang
-            //- div#myPosition Software Developer And Data Engineer
+  div#pageHead.container-fluid(style='height: 80px;')
+    nav.navbar.navbar-default.navbar-fixed-top
+      div.navbar-header
+        a.navbar-brand(href='#pageHead' style='font-size: 40px; font-weight: bold;') Nengyun Zhang
 
-        div#myTopNavbar.collapse.navbar-collapse
-          ul.nav.navbar-nav.navbar-right
-            li.active
-              a(href='#Home' data-toggle='tab')
-                div.navBarItems HOME
-                
-            li
-              a(href='#Resume' data-toggle='tab')
-                div.navBarItems RESUME
-                
-            li
-              a(href='#Projects' data-toggle='tab')
-                div.navBarItems PROJECTS
 
-            li
-              a(href='#Contact' data-toggle='tab')
-                div.navBarItems CONTACT
+        button.navbar-toggle(type='button' data-toggle='collapse' data-target='#navMenu')
+          span.sr-only Navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
 
-  
+      div#navMenu.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-right
+          li.active
+            a(href='#Home' data-toggle='tab') HOME
+          li
+            a(href='#Cv' data-toggle='tab') CV
+          li
+            a(href='#Projects' data-toggle='tab') PROJECTS
+          li
+            a(href='#Contact' data-toggle='tab') CONTACT
 
-  //- div#myContentContainer
-  div#myContentTop.tab-content.well(style='margin:0 auto; background-color: transparent')
-    div#Home.tab-pane.fade.in.active
+
+
+  div.tab-content(style='max-width: 1000px; margin: auto;')
+
+    div#Home.tab-pane.fade.in.active(style='border: 2px solid orange; padding: 20px;')
       div.container
         div.row
-          div.col-xs-12.col-sm-6.col-md-4.col-lg-4(style='padding: 0px')
-            img.media-object(src='images/myport_2.jpg' alt='my photo...' style='max-width: 320px; height: auto;')
-          div.col-xs-12.col-sm-6.col-md-4.col-lg-4.col-md-offset-1(style='padding: 0px')
-            h1(style='font-size: 40px; margin-top: 0px;')
+          div.col-sm-6.col-md-5.col-lg-4.thumbnail
+            img.img-responsive(src='images/myport.jpg' alt='my port')
+          div.col-sm-6.col-md-6.col-md-offset-1.col-lg-5
+            h1(style='font-size: 35px; margin-top: 0px; color: khaki;')
               b Welcome Visitor,
-            hr(size='50')
+            hr
             h4 
               b I
               | 'm a Software Developer,
@@ -56,67 +47,400 @@ block content
             h4 
               b A
               | nd a Data Engineer,
-            h3(style='font-size: 22px;')
+            h3(style='font-size: 22px; color: orangered;')
               b A
-              | nd I'm excited to work!
-            br
+              | nd I'm AVAILABLE for HIRE!
 
+            hr
             p Email: gregoryfullstack@gmail.com
             p Cell: (720) 393-0168
             p(style='margin-bottom: 0px') LinkedIn: 
             a(href='www.linkedin.com/in/nengyun-zhang-88715841') www.linkedin.com/in/nengyun-zhang-88715841
 
-      br
       hr
 
-      div.container(style='text-align: center; width: 90%')
+      div.container(style='margin-top: 20px;')
         div.row
-          div.col-xs-12.col-sm-4.col-md-4.col-lg-4
-            h4(style='font-weight: normal') RECENT AWARDS
-            div.smallSection
-              p ECE's Spring 2016 Outstanding Graduate Teaching Assistant
+          div.col-sm-4.col-lg-3(style='border-right: 1px solid grey;')
+            h5 RECENT AWARDS
+            ul
+              li UA College of Engineering Outstanding Graduate Teaching Assistant - 2016
 
-          div.col-xs-12.col-sm-4.col-md-4.col-lg-4
-            h4(style='font-weight: normal') FAVORITE QUOTE
-            div.smallSection
-              p(style='text-align: left') As soon as you trust yourself, you will know how to live.
-              p(style='font-size: 13px; float: right') — Johann Wolfgang von Goethe
+          div.col-sm-4.col-lg-3(style='border-right: 1px solid grey;')
+            h5 FAVORITE QUOTE
+            q The soul that sees beauty may sometimes walk alone.
+            br
+            br
+            p(style='font-size: 14px; float: right; padding-right: 5px;') — Johann Wolfgang von Goethe
 
-          div.col-xs-12.col-sm-4.col-md-4.col-lg-4
-            h4(style='font-weight: normal;') RECENT PROJECTS
-            div.smallSection
-              ul(style='text-align: left; font-size: 13px;')
-                li Awesome DAVIS :-)
-                  br
-                  b da
-                  | ta 
-                  b vis
-                  |ualization of 
-                  a(href='https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn') GHCN from NOAA
-                li Detect Community Structure in Social Networks
-
-
-
-
-    div#Resume.tab-pane.fade
-      p this is resume
-
-    div#Projects.tab-pane.fade
-      p this is projects
-      
-    div#Contact.tab-pane.fade
-      p this is contact
-
-
-    //- div#myContentMiddle.tab-content(style='margin:0 auto')
-    //-   div#Home.tab-pane.fade.in.active
-
-
-    //-   div#Resume.tab-pane.fade
+          div.col-sm-4.col-lg-3
+            h5 RECENT PROJECTS
+            ul(style='font-size: 13px;')
+              li Amazing Davis: 
+                b(style='font-size: 14px;') Da
+                | ta 
+                b(style='font-size: 14px;') Vis
+                |ualization of 
+                a(href='https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn') Global Historical Climatology Network
+              li Detect Community Structure in Social Networks
  
-        
-    //-   div#Projects.tab-pane.fade
-        
 
-    //-   div#Contact.tab-pane.fade
+      hr
+
+      div.container(style='margin-top: 20px;')
+        div.row
+          div.col-sm-4.col-lg-3(style='border-right: 1px solid grey;')
+            h5 EDUCATION
+            ul(style='text-align: left; font-size: 13px;')
+              li M.S. The University of Arizona, 2014/08 - 2016/12
+              li B.S. Colorado State University, 2010/08 - 2014/05
+
+          div.col-sm-4.col-lg-3(style='border-right: 1px solid grey;')
+            h5 CAREER INTERESTS
+            ul(style='text-align: left; font-size: 13px;')
+              li Data-driven and User-interactive Web Development
+              li Data Analysis and Data Mining
+
+          div.col-sm-4.col-lg-3
+            h5 HOBBIES
+            ul(style='text-align: left; font-size: 13px;')
+              li Snowboarding
+              li Hiking
+              li Rock Climbing
+              li Photography
+
+      hr
+
+    div#Cv.tab-pane.fade(style='border: 2px solid orange; padding: 20px;')
+      div.container
+        //- (style='border: 1px solid purple')
+        div.row
+          div.col-sm-6.col-md-6.col-lg-5
+            h1(style='font-size: 45px; margin-top: 0px; color: peru;')
+              b CV
+            h3(style='color: floralwhite;') 
+              b Nengyun Zhang
+            hr
+            p Email: gregoryfullstack@gmail.com
+            p Cell: (720) 393-0168
+            p(style='margin-bottom: 0px') LinkedIn: 
+            a(href='www.linkedin.com/in/nengyun-zhang-88715841') www.linkedin.com/in/nengyun-zhang-88715841
+
+          div.col-sm-6.col-md-5.col-md-offset-1.col-lg-4
+            img.img-responsive(src='images/myport_1.jpg' alt='my port' style='max-width: 260px;')
+
+      hr
+
+      div.container(style='margin-top: 20px;')
+        div.row
+          div.col-sm-6.col-lg-5
+            h3 Programming Languages
+            p(style='font-size: 15px') Java, C/C++, Python, Matlab
+            p(style='font-size: 15px') HTML/CSS, Javascript
+
+            br
+            h5 Web Development Libraries and Frameworks
+            p(style='font-size: 15px') jQuery, Bootstrap, D3, MongoDB
+            p(style='font-size: 15px') ExpressJS, AngularJS, NodeJS
+
+            br
+            h5 Machine Learning and Data Manipulation Libraries
+            p(style='font-size: 15px') scikit-learn, pandas, matplotlib            
+
+          div.col-sm-6.col-lg-5
+            canvas
+
+      hr
+
+      div.container(style='margin-top: 20px;')
+        h3 Related Courses
+        p Object Oriented Programming, Data Structure, Algorithm Design, Database Implementation, Computer Based System
+        p Machine Learning, Artifitial Intelligence, Computer Network, Computer Architecture
+
+      hr
+
+      div.container(style='margin-top: 20px;')
+        h3 Education
+        ul
+          li
+            p The University of Arizona, Electrical and Computer Engineering, Tucson, AZ
+            p
+              b Master of Science
+              | , 2014/09 - 2016/12
+          li
+            p Colorado State University, Electrical and Computer Engineering, Fort Collins, CO
+            p
+              b Bachelor of Science
+              | , 2010/08 - 2014/05
+
+      hr
+
+      div.container(style='margin-top: 20px;')
+        h3 Academic Teaching Experience
+        ul
+          li
+            p Computation Techniques - Spring 2015, Spring 2016
+          li
+            p Numerical Modeling of Physics and Biological Systems - Fall 2014, Fall 2015
+
+      hr
+
+      div.container(style='margin-top: 20px;')
+        h3 Awards
+        ul
+          li
+            p UA College of Engineering Outstanding Graduate Teaching Assistant -  2016  
+             a(href='http://ece.arizona.edu/announcing-eces-spring-2016-outstanding-students' target='_blank') Link
+
+
+    div#Projects.tab-pane.fade(style='border: 2px solid orange; padding: 20px;')
+      div.container
+        
+        div.row
+          div.col-lg-10
+            h1(style='text-align: center; padding: 0 0 30px 0; border-bottom: 2px solid whitesmoke; color: Beige;') Projects Gallary
+
+
+      div.container(style='margin-top: 20px;')
+        div.row
+          div.col-sm-4.col-lg-3.projItem
+            //- (style='border: 1px solid red')
+            h3 Database Implementation
+            a.projLink(href='#Minibase' data-toggle='modal')
+              div.caption
+                div.caption-content
+                  i.fa.fa-search-plus.fa-3x
+                  p View This Project
+              img.img-responsive(src='images/minibase_logo.jpg' alt='minibase')
+
+          div.col-sm-4.col-lg-3.projItem
+            h3 Community Structure
+            a.projLink(href='#Community' data-toggle='modal')
+              div.caption
+                div.caption-content
+                  i.fa.fa-search-plus.fa-3x
+                  p View This Project
+              img.img-responsive(src='images/community_logo.jpg' alt='community structure')
+
+          div.col-sm-4.col-lg-3.projItem
+            h3 Seam Carving
+            a.projLink(href='#SeamCarving' data-toggle='modal')
+              div.caption
+                div.caption-content
+                  i.fa.fa-search-plus.fa-3x
+                  p View This Project
+              img.img-responsive(src='images/seamcarving-logo.jpg' alt='seam carving')
+
+    div#Contact.tab-pane.fade this is contact this is contact this is contact
+
+
+  div.footer-below
+    div.container(style='text-align: center; margin-top: 40px; margin-bottom: 40px;')
+      div.row Copyright © Nengyun Zhang 2016
+
+
+  div#Minibase.modal.fade.projModal(role='dialog' aria-hidden='true')
+    div.modal-dialog
+      div.modal-content
+        div.modal-header
+          button.close(type='button' data-dismiss='modal')
+            i.fa.fa-times(style='color: white;')
+          h3 Database Implementation - Minibase
+        div.modal-body
+          div.projDesc Collaboration of 2
+            h5
+              span Language: C/C++
+              span(style='float: right;') Duration: 02/2016 - 05/2016
+            hr
+
+            p Minibase is a single-user database management system which contains parser, optimizer, buffer pool manager, storage mechanisms and a disk space management system. 
+            p In this project, we successfully implemented low level modules of the database, including:
+            ul 
+              li 
+                h5 Heap File and HFPage Structure
+                ul(style='list-style-type: circle;')
+                  li Create and Destory Heap File.
+                  li Open and Close Existing Heap File.
+                  li Insert and Delete Data Records.
+                  li Each Data record has unique record id. A specific record can be retrieved by using its record id.
+                  li Sequential Scan is Supported.
+
+              li
+                h5 Buffer Manager
+                ul(style='list-style-type: circle;')
+                  li Allocate and De-allocate 
+                    i buffer pool.
+                  li Pin and Unpin a Page to/from 
+                    i buffer pool.
+                  li Flush Page to Disk.
+                  li LOVE/HATE Replacement Policy is Implemented.
+
+              li 
+                h5 B+ Tree File Structure
+                ul(style='list-style-type: circle;')
+                  li
+                    i SortedPage 
+                    | class is Implemented.
+                  li 
+                    i IndexPage 
+                    | and 
+                    i LeafPage 
+                    | classes are Implemented and Derived from 
+                    i SortedPage.
+                  li On Insert, Split Page When Necessary to Keep B+ Tree Balanced.
+                  li De-allocate Page When Page is Empty.
+                  li In-order Scan is Supported.
+              
+              li 
+                h5 Sort Merge Join
+                ul(style='list-style-type: circle;')
+                  li Joins Two Relations R and S Using Sort-merge Join Algorithm.
+                  li Tuple Compare Function is Implemented.
+                  li Scan Cursor can be Positioned to Any Record within the File.
+
+        div.modal-footer
+          button.btn.btn-default(type='button' data-dismiss='modal') Close
+
+  div#Community.modal.fade.projModal(role='dialog' aria-hidden='true')
+    div.modal-dialog
+      div.modal-content
+        div.modal-header
+          button.close(type='button' data-dismiss='modal')
+            i.fa.fa-times(style='color: white;')
+          h3 Detect Community Stucture In Social Networks
+        div.modal-body
+          div.projDesc
+            h5
+              span Language: Java
+              span(style='float: right;') Duration: 07/2016 - 07/2016
+            hr
+
+            p Networks, especially Social Networks, often present Community Structure - 
+              q a Network is said to have Community Structure if the nodes of the network can be grouped into sets of nodes such that each set of nodes is densely connected internally. 
+              | - Wikipedia
+            
+            p In this project, I successfully implemented the following parts:
+            ul
+              li
+                h5 Girvan-Newman Algorithm
+                ul(style='list-style-type: circle;')
+                  li Graph is Implemented as Ajacency List.
+                  li Rotation-invariant Hashcode is Implemented for the Edge.
+                  li Compute "betweenness" of Each Edge.
+                  li Modularity Function is Implemented to Determine the Termination Condition.
+                  li Terminate Splitting if Second Local Peaks of Modularity Appears or Max Iteration is Reached.
+              
+              li 
+                h5 GML Parser
+                ul(style='list-style-type: circle;')
+                  li GML: Graph Modeling Language.
+
+              li
+                h5 Graph Visualization
+                ul(style='list-style-type: circle;')
+                  li Use Open Source Library - Graphstream to draw the Force-Directed Graph.
+
+            hr
+
+            h4 Results Exhibition:
+            p Left graphs are original graphs, right graphs are colored according to their community structure.
+
+            div.demoImg-sq-left
+              img.img-responsive(src='images/karate_in_smsq.jpg' alt='original graph 1')
+
+            div.demoImg-sq-left
+              img.img-responsive(src='images/karate_out_smsq.jpg' alt='output graph 1')
+              
+            div(style='clear: both; margin-bottom: 30px;')
+              p Fig. 1 - 
+                a(href='http://www-personal.umich.edu/~mejn/netdata/karate.zip')
+                  | Zachary's Karate Club
+                | : social network of friendships between 34 members of a karate club at a US university in the 1970s.
+
+            div.demoImg-sq-left
+              img.img-responsive(src='images/lesmis_in_smsq.jpg' alt='original graph 2')
+
+            div.demoImg-sq-left
+              img.img-responsive(src='images/lesmis_out_smsq.jpg' alt='output graph 2')
+
+            div(style='clear: both; margin-bottom: 30px;')
+              p Fig. 2 -
+                a(href='http://www-personal.umich.edu/~mejn/netdata/lesmis.zip') Les Miserables
+                | : coappearance network of characters in the novel Les Miserables.
+            
+            div.demoImg-sq-left
+              img.img-responsive(src='images/commu_in_smsq.jpg' alt='original graph 3')
+
+            div.demoImg-sq-left
+              img.img-responsive(src='images/commu_out_smsq.jpg' alt='output graph 3')
+
+            div(style='clear: both; margin-bottom: 30px;')
+              p Fig. 3 - 
+                a(href='http://www-personal.umich.edu/~mejn/netdata/netscience.zip') Coauthorships in network science
+                | : coauthorship network of scientists working on network theory and experiment.
+        div.modal-footer
+          button.btn.btn-default(type='button' data-dismiss='modal') Close
+
+
+  div#SeamCarving.modal.fade.projModal(role='dialog' aria-hidden='true')
+    div.modal-dialog
+      div.modal-content
+        div.modal-header
+          button.close(type='button' data-dismiss='modal')
+            i.fa.fa-times(style='color: white;')
+          h3 Seam Carving
+        div.modal-body
+          div.projDesc
+            h5
+              span Language: Java
+              span(style='float: right;') Duration: 01/2016 - 01/2016
+            hr
+
+            p Seam Carving is a content-aware image resizing. It functions via removing seams which contains least energy from end to end.
+            
+            q The purpose of the algorithm is image retargeting, which is the problem of displaying images without distortion on media of various sizes using document standards, like HTML, that already support dynamic changes in page layout and text but not images
+
+            p(style='float: right;') - Wikipedia
+
+            p(style='clear: both;') In this project, I successfully implemented the following parts:
+            ul
+              li
+                h5 Seam Carving Algorithm
+                ul(style='list-style-type: circle;')
+                  li Use java.awt.Color class to extract picture information.
+                  li Implement Dual Gradient Energy Function to Computed Energy of Each Pixel.
+                  li Reverse Post Order Traversal of a Graph
+                  li Depth First Search to Find the Seam with Least Energy.
+
+            hr
+
+            h4(style='clear: both;') Results Exhibition:
+            p Left graphs are resized images while right graphs are original images.
+
+            div.demoImg-rect-left
+              img.img-responsive(src='images/chameleon_cutted.png' alt='chameleon')
+
+            div.demoImg-rect-left
+              img.img-responsive(src='images/chameleon_original.png' alt='chameleon')
+              
+            div(style='clear: both; margin-bottom: 30px;')
+              p Fig. 1 - Chameleon
+
+            div.demoImg-rect-left
+              img.img-responsive(src='images/hjocean_cutted.png' alt='ocean')
+
+            div.demoImg-rect-left
+              img.img-responsive(src='images/hjocean_original.png' alt='ocean')
+              
+            div(style='clear: both; margin-bottom: 30px;')
+              p Fig. 2 - Ocean
+                
+
+        div.modal-footer(style='clear: both;')
+          button.btn.btn-default(type='button' data-dismiss='modal') Close
+
+
+
+
+
 
