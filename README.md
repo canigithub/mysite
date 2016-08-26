@@ -1,3 +1,3 @@
 # mysite
 
-proj_1: minibase
+minibase, community, seamcarving, unfoldingmap, ML, kdtree, datacompression, pp, DAVIS
