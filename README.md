@@ -1,3 +1,7 @@
 # mysite
 
-minibase, community, seamcarving, unfoldingmap, ML, kdtree, datacompression, pp, DAVIS, text editor
+Minibase
+Community
+Seamcarving
+Texteditor
+unfoldingmap, ML, kdtree, datacompression, pp, DAVIS, 
