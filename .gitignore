@@ -3,3 +3,7 @@ node_modules/
 .DS_Store
 test/
 public/bootstrap/
+*.mp4
+*.jpg
+*.png
+*.gif

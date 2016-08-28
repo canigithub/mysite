@@ -214,7 +214,7 @@ block content
               img.img-responsive(src='images/minibase_logo.jpg' alt='minibase')
 
           div.col-sm-4.col-lg-3.projItem
-            h3 Community Structure
+            h3 Detect Community Structure
             a.projLink(href='#Community' data-toggle='modal')
               div.caption
                 div.caption-content
@@ -224,12 +224,78 @@ block content
 
           div.col-sm-4.col-lg-3.projItem
             h3 Seam Carving
-            a.projLink(href='#SeamCarving' data-toggle='modal')
+            a.projLink(href='#Seamcarving' data-toggle='modal')
               div.caption
                 div.caption-content
                   i.fa.fa-search-plus.fa-3x
                   p View This Project
               img.img-responsive(src='images/seamcarving-logo.jpg' alt='seam carving')
+
+        div.row
+          div.col-sm-4.col-lg-3.projItem
+            //- (style='border: 1px solid red')
+            h3 UnfoldingMaps Application
+            a.projLink(href='#Unfoldmap' data-toggle='modal')
+              div.caption
+                div.caption-content
+                  i.fa.fa-search-plus.fa-3x
+                  p View This Project
+              img.img-responsive(src='images/unfoldmap.jpg' alt='ufmap')
+
+          div.col-sm-4.col-lg-3.projItem
+            //- (style='border: 1px solid red')
+            h3 Data Compression
+            a.projLink(href='#Datacomp' data-toggle='modal')
+              div.caption
+                div.caption-content
+                  i.fa.fa-search-plus.fa-3x
+                  p View This Project
+              img.img-responsive(src='images/datacomp-logo.jpg' alt='datacomp')
+            
+
+          div.col-sm-4.col-lg-3.projItem
+            //- (style='border: 1px solid red')
+            h3 Machine Learning
+            a.projLink(href='#Ml' data-toggle='modal')
+              div.caption
+                div.caption-content
+                  i.fa.fa-search-plus.fa-3x
+                  p View This Project
+              img.img-responsive(src='images/ml-logo.jpg' alt='ml')
+            
+
+        div.row
+          div.col-sm-4.col-lg-3.projItem
+            //- (style='border: 1px solid red')
+            h3 Amazing Davis
+            a.projLink(href='#' data-toggle='modal')
+              div.caption
+                div.caption-content
+                  i.fa.fa-search-plus.fa-3x
+                  p View This Project
+              img.img-responsive(src='images/ms.png' alt='amadav')
+
+          div.col-sm-4.col-lg-3.projItem
+            //- (style='border: 1px solid red')
+            h3 Text Editor Application
+            a.projLink(href='#Texteditor' data-toggle='modal')
+              div.caption
+                div.caption-content
+                  i.fa.fa-search-plus.fa-3x
+                  p View This Project
+              img.img-responsive(src='images/texteditor-logo.jpg' alt='texteditor')
+
+          div.col-sm-4.col-lg-3.projItem
+            //- (style='border: 1px solid red')
+            h3 Path Planing
+            a.projLink(href='#' data-toggle='modal')
+              div.caption
+                div.caption-content
+                  i.fa.fa-search-plus.fa-3x
+                  p View This Project
+              img.img-responsive(src='images/ms.png' alt='pp')
+
+
 
     div#Contact.tab-pane.fade this is contact this is contact this is contact
 
@@ -328,7 +394,6 @@ block content
                   li Rotation-invariant Hashcode is Implemented for the Edge.
                   li Compute "betweenness" of Each Edge.
                   li Modularity Function is Implemented to Determine the Termination Condition.
-                  li Terminate Splitting if Second Local Peaks of Modularity Appears or Max Iteration is Reached.
               
               li 
                 h5 GML Parser
@@ -342,8 +407,8 @@ block content
 
             hr
 
-            h4 Results Exhibition:
-            p Left graphs are original graphs, right graphs are colored according to their community structure.
+            h4 Project Demostration:
+            p (Left graphs are original graphs, right graphs are colored according to their community structure)
 
             div.demoImg-sq-left
               img.img-responsive(src='images/karate_in_smsq.jpg' alt='original graph 1')
@@ -365,8 +430,8 @@ block content
 
             div(style='clear: both; margin-bottom: 30px;')
               p Fig. 2 -
-                a(href='http://www-personal.umich.edu/~mejn/netdata/lesmis.zip') Les Miserables
-                | : coappearance network of characters in the novel Les Miserables.
+                a(href='http://www-personal.umich.edu/~mejn/netdata/lesmis.zip') Les Misérables
+                | : coappearance network of characters in the novel Les Misérables.
             
             div.demoImg-sq-left
               img.img-responsive(src='images/commu_in_smsq.jpg' alt='original graph 3')
@@ -382,7 +447,7 @@ block content
           button.btn.btn-default(type='button' data-dismiss='modal') Close
 
 
-  div#SeamCarving.modal.fade.projModal(role='dialog' aria-hidden='true')
+  div#Seamcarving.modal.fade.projModal(role='dialog' aria-hidden='true')
     div.modal-dialog
       div.modal-content
         div.modal-header
@@ -405,7 +470,7 @@ block content
             p(style='clear: both;') In this project, I successfully implemented the following parts:
             ul
               li
-                h5 Seam Carving Algorithm
+                h5 Seam Carving
                 ul(style='list-style-type: circle;')
                   li Use java.awt.Color class to extract picture information.
                   li Implement Dual Gradient Energy Function to Computed Energy of Each Pixel.
@@ -414,8 +479,8 @@ block content
 
             hr
 
-            h4(style='clear: both;') Results Exhibition:
-            p Left graphs are resized images while right graphs are original images.
+            h4(style='clear: both;') Project Demostration:
+            p (Left graphs are resized images while right graphs are original images)
 
             div.demoImg-rect-left
               img.img-responsive(src='images/chameleon_cutted.png' alt='chameleon')
@@ -438,6 +503,223 @@ block content
 
         div.modal-footer(style='clear: both;')
           button.btn.btn-default(type='button' data-dismiss='modal') Close
+
+  div#Texteditor.modal.fade.projModal(role='dialog' aria-hidden='true')
+    div.modal-dialog
+      div.modal-content
+        div.modal-header
+          button.close(type='button' data-dismiss='modal')
+            i.fa.fa-times(style='color: white;')
+          h3 Text Editor
+        div.modal-body
+          div.projDesc
+            h5
+              span Language: Java
+              span(style='float: right;') Duration: 05/2016 - 05/2016
+            hr
+
+            p In this project, I successfully implemented part of the text editor application, including:
+            ul
+              li
+                h5 Construct A Trie Structure to Store the Dictionary.
+              li
+                h5 Implement Spelling Suggestions Function.
+              li 
+                h5 Implement Text Auto Complete Function.
+              li
+                h5 Computing Flesch Index.
+              li 
+                h5 Tiny Game - Edit Distance
+                ul(style='list-style-type: circle;')
+                  li Find the Minimum Number of Hops to Transform One Word to Another
+                  li Each Hop, One Can Only Insert or Delete or Modify One Character.
+              li 
+                h5 Tiny Game - Generate Markov Text
+                ul(style='list-style-type: circle;')
+                  li With Given Context, Generate Random Language-like Texts.
+
+            hr
+
+            h4 Project Demostration:
+            br
+            div(align='center')
+              video(style='max-width: 640px;' controls )
+                source(src='images/texteditor-720.mp4' typ='video/mp4')
+
+        div.modal-footer(style='clear: both;')
+          button.btn.btn-default(type='button' data-dismiss='modal') Close
+
+
+  div#Unfoldmap.modal.fade.projModal(role='dialog' aria-hidden='true')
+    div.modal-dialog
+      div.modal-content
+        div.modal-header
+          button.close(type='button' data-dismiss='modal')
+            i.fa.fa-times(style='color: white;')
+          h3 Global Earthquake Data Visualization With Unfolding Maps
+        div.modal-body
+          div.projDesc
+            h5
+              span Language: Java
+              span(style='float: right;') Duration: 04/2016 - 04/2016
+            hr
+
+            p The goal of this project is to implement an application to visualize the global earthquake data in the past 24 hours. 
+
+            p The features of this application includes:
+            ul
+              li 
+                h5 Use Java Processing Library
+              li 
+                h5 User Interactive
+                ul(style='list-style-type: circle;')
+                  li Hover over Mark to View Detailed Info.
+                  li Click Mark to Concentrate on the Clicked Mark.
+              li 
+                h5 Multiple Categories of Data
+                ul(style='list-style-type: circle;')
+                  li Different Marks for City, Land Quake and Ocean Quake.
+                  li Mark Varies According to the Size, Time and Depth of the Quake.
+
+            hr
+
+            h4 Project Demostration:
+            br
+            div(align='center')
+              video(style='max-width: 640px;' controls )
+                source(src='images/unfoldmap-720.mp4' typ='video/mp4')
+
+        div.modal-footer(style='clear: both;')
+          button.btn.btn-default(type='button' data-dismiss='modal') Close
+
+
+  div#Datacomp.modal.fade.projModal(role='dialog' aria-hidden='true')
+    div.modal-dialog
+      div.modal-content
+        div.modal-header
+          button.close(type='button' data-dismiss='modal')
+            i.fa.fa-times(style='color: white;')
+          h3 Practical Data Compression Algorithm
+        div.modal-body
+          div.projDesc
+            h5
+              span Language: Java
+              span(style='float: right;') Duration: 02/2016 - 02/2016
+            hr
+
+            p The goal of this project is to implement an practical lossless data compression algorithm. 
+
+            p In this project, I have successfully implemented the following parts: 
+            ul
+              li 
+                h5 Burrows-Wheeler Transform
+                ul(style='list-style-type: circle;')
+                  li ( purpose ) Rearrange the Characters in the Original Text to Group Up All Repeated Character.
+                  li ( encoder ) Implement Circular Suffix Array to Group Up Common All Preceding Charaters.
+                  li ( decoder ) Deduce the Original String from the Last Column of the Sorted Suffixes and Index of the Original String in the Sorted Suffixes.
+
+              li 
+                h5 Move-To-Front Encoding
+                ul(style='list-style-type: circle;')
+                  li ( purpose ) Map Alphabet to Index. If Same Character Appear to Each Other Frequently, the Output Index will Contain Many Small Numbers.
+                  li ( encoder ) Initialize Ordered Sequence of All Characters. Read Character, Write its Index and Move the Character to the Front of the Sequence.
+                  li ( decoder ) Initialize Ordered Sequence of All Characters. Read Index i, Output the i-th Character in the Ordered Sequence and Move the Character to the Front of the Sequence.
+              li 
+                h5 Huffman Compression
+                ul(style='list-style-type: circle;')
+                  li ( purpose ) Compress Data. If there're Lots of Small Characters, the Compression Ratio will be Very High.
+                  li ( encoder ) Construct a Binary Trie Structure to Encode Data.
+                  li ( decoder ) Reconstruct the Binary Trie Structure and Decode Data.
+                  
+
+            hr
+
+            h4 Project Demostration:
+            br
+            div(align='center')
+              img.img-responsive(src='images/datacomp-fig-1.jpg' alt='original' style='max-height: 350px; width: auto; border: 1px solid #ccc;')
+              p Fig. 1 - Character Distribution In the Original Text.
+              p [Data Size = 192KB]
+              br
+
+            div(align='center')
+              img.img-responsive(src='images/datacomp-fig-2.jpg' alt='original' style='max-height: 350px; width: auto; border: 1px solid #ccc;')
+              p Fig. 2 - Character Distribution After Burrows-Wheeler Transform. Notice that Characters are Less Scattered.
+              p [Data Size = 192KB]
+              br
+
+            div(align='center')
+              img.img-responsive(src='images/datacomp-fig-3.jpg' alt='original' style='max-height: 350px; width: auto; border: 1px solid #ccc;')
+              p Fig. 3 - Character Distribution After Move-To-Front Encoding. Notice that Original Characters are Mapped to 'Small' Characters and Highly Clustered.
+              p [Data Size = 192KB]
+              br
+
+            div(align='center')
+              img.img-responsive(src='images/datacomp-fig-4.jpg' alt='original' style='max-height: 350px; width: auto; border: 1px solid #ccc;')
+              p Fig. 4 - Character Distribution After Huffman Compression. 
+              p [Data Size = 66KB]
+              br
+
+        div.modal-footer(style='clear: both;')
+          button.btn.btn-default(type='button' data-dismiss='modal') Close
+
+
+  div#Ml.modal.fade.projModal(role='dialog' aria-hidden='true')
+    div.modal-dialog
+      div.modal-content
+        div.modal-header
+          button.close(type='button' data-dismiss='modal')
+            i.fa.fa-times(style='color: white;')
+          h3 Machine Learning Algorithms Implementation Practice
+        div.modal-body
+          div.projDesc
+            h5
+              span Language: Python
+              span(style='float: right;') Duration: 11/2015 - 02/2016
+            hr
+
+            p The goal of this project is to implement a variaty of machine learning algorithms in order to gain a solid understanding of its mechanism. 
+
+            p Implemented Algorithms:
+            ul
+              li 
+                h5 Regressions
+                p Case Studied: Train a Model to Predict House Prices Given Dataset of House Features and Real Prices.
+                ul(style='list-style-type: circle;')
+                  li Polynomial Regression
+                  li Ridge Regression
+                  li Lasso Regression
+                  li Cross-validation
+                  li Gradient Descent Algorithm
+                  li Coordinate Descent Algorithm
+              li 
+                h5 Classifications
+                p Case Studied: Train a Classifier to Predict Customer Sentiment Given Dataset of Comments from Customer.
+                ul(style='list-style-type: circle;')
+                  li Logistic Regression With Regulation
+                  li Stochastic Gradient Ascent
+                  li Descision Tree With Pruning Algorithm
+                  li AdaBoost Ensemble Method
+              li 
+                h5 Clusterings
+                p Case Studied: Train a Model to Cluster Articles about Famous People From Wikipedia. 
+                ul(style='list-style-type: circle;')
+                  li Locality Sensitive Hashing Algorithm 
+                  li K-means
+                  li Expectation Maximization
+                  li Latent Dirichlet Allocation
+                  li Concept learned: MapReduce
+              li
+                h5 Problems Solving
+                ul(style='list-style-type: circle;')
+                  li Implement Metropolis-Hastings Algorithm to Infer Coordinate of of a 3-D Line from a Noisy 2-D Line.
+                  li Train a Simple Neural Network to Identify Images from MNIST Dataset.
+
+
+        div.modal-footer(style='clear: both;')
+          button.btn.btn-default(type='button' data-dismiss='modal') Close
+
+
 
 
 

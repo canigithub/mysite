@@ -65,7 +65,8 @@ a {
 
 #Projects .projItem h3 {
   text-align: center;
-  color: Gainsboro;
+  color: lightskyblue;
+  /*color: MediumAquaMarine;*/
   font-size: 20px;
   height: 40px;
 }
