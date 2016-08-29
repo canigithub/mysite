@@ -4,4 +4,7 @@ Minibase
 Community
 Seamcarving
 Texteditor
-unfoldingmap, ML, kdtree, datacompression, pp, DAVIS, 
+Unfoldmap
+Datacomp
+Ml
+kdtree, pp, DAVIS, 
