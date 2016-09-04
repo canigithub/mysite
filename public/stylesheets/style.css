@@ -1,5 +1,9 @@
+* {
+  /*border: 1px solid lightblue;*/
+}
+
 body {
-  background-color: dimgray;
+  background-color: #353535;
   color: floralwhite;
 }
 
@@ -8,7 +12,7 @@ a {
 }
 
 #navMenu ul li {
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 #Home > .container:nth-of-type(2) h5,

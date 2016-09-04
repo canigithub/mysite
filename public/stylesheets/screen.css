@@ -1,0 +1,43 @@
+
+
+@media screen and (min-width: 805px) {
+  div.navbar-header {
+    margin-left: 20px;
+  }
+
+  ul.nav {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .tab-content > div {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #RedunctInfoLg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .BriefIntro {
+    width: 355px;
+  }
+
+  #myCanvasContainer {
+    margin-left: 100px;
+  }
+
+  #CVPORT {
+    margin-left: 220px;
+  }
+
+  .SchoLogo {
+    padding-right: 60px;
+  }
+}
+
+
+
