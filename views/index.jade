@@ -9,7 +9,7 @@ block content
   div#pageHead.container-fluid(style='height: 80px;')
     nav.navbar.navbar-default.navbar-fixed-top(style='background-color: WhiteSmoke;')
       div.navbar-header
-        a.navbar-brand(href='#pageHead' style='font-size: 40px; font-weight: bold; color: #555;') Nengyun Zhang
+        a.navbar-brand(href='#pageHead' style='font-size: 40px; font-weight: bold; color: #555;') NENGYUN ZHANG
 
 
         button.navbar-toggle(type='button' data-toggle='collapse' data-target='#navMenu')
@@ -376,7 +376,7 @@ block content
         h1(style='color: Beige;') CONTACT ME 
         p Looking forward to answering your email!
         hr
-        form(action='#' name='message' novalidate)
+        form(action='/submitmsg' method='post' name='submitmsg' novalidate)
           div.form-group
             input.form-control(type='text' placeholder='Name' name='vname')
           div.form-group
