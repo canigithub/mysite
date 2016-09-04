@@ -22,6 +22,21 @@
 }
 
 @media screen and (min-width: 1200px) {
+
+  #Home > .container:nth-of-type(2),
+  #Home > .container:nth-of-type(3) {
+    margin-left: 50px;
+  }
+
+  #Projects .col-lg-10 {
+    margin-left: 10px;
+  }
+
+  #Projects .projItem {
+    padding: 0px;
+    margin: 15px;
+  }
+
   .BriefIntro {
     width: 355px;
   }
@@ -39,5 +54,11 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  #Home > .container:nth-of-type(2) .col-sm-4,
+  #Home > .container:nth-of-type(3) .col-sm-4{
+    border: 1px solid gray;
+  }
+}
 
 

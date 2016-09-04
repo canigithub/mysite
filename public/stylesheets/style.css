@@ -43,36 +43,12 @@ a {
   padding: 10px;
 }
 
-@media screen and (max-width: 767px) {
-  #Home > .container:nth-of-type(2) .col-sm-4,
-  #Home > .container:nth-of-type(3) .col-sm-4{
-    border: 1px solid gray;
-  }
-}
-
-
-@media screen and (min-width: 1200px) {
-  #Home > .container:nth-of-type(2),
-  #Home > .container:nth-of-type(3) {
-    margin-left: 50px;
-  }
-
-  #Projects .col-lg-10 {
-    margin-left: 10px;
-  }
-
-  #Projects .projItem {
-    padding: 0px;
-    margin: 15px;
-  }
-}
-
 #Projects .projItem h3 {
   text-align: center;
   color: lightskyblue;
   /*color: MediumAquaMarine;*/
-  font-size: 20px;
-  height: 40px;
+  font-size: 15px;
+  /*height: 40px;*/
 }
 
 #Projects .projItem .projLink {

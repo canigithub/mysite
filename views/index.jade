@@ -171,49 +171,49 @@ block content
             div#tags(style='display: none;')
               ul
                 li
-                  a#cavSQL(href='#cavSQL')
+                  a#cavSQL(href='#Cv')
                     img(src='images/canvas/sql.png' width='140' height='70' alt='SQL')
                 li
-                  a#cavJS(href='#cavJS')
+                  a#cavJS(href='#Cv')
                     img(src='images/canvas/js.png' width='70' height='80' alt='JS')
                 li
-                  a#cavHTML(href='#cavHTML')
+                  a#cavHTML(href='#Cv')
                     img(src='images/canvas/html5.png' width='80' height='80' alt='HTML')
                 li
-                  a#cavJAVA(href='#cavJAVA')
+                  a#cavJAVA(href='#Cv')
                     img(src='images/canvas/java.png' width='70' height='90' alt='JAVA')
                 li
-                  a#cavCSS(href='#cavCSS')
+                  a#cavCSS(href='#Cv')
                     img(src='images/canvas/css.png' width='70' height='100' alt='CSS')
                 li
-                  a#cavCPP(href='#cavCPP')
+                  a#cavCPP(href='#Cv')
                     img(src='images/canvas/cpp.png' width='120' height='70' alt='CPP')
                 li
-                  a#cavC(href='#cavC')
+                  a#cavC(href='#Cv')
                     img(src='images/canvas/c.png' width='80' height='80' alt='C')
                 li
-                  a#cavPY(href='#cavPY')
+                  a#cavPY(href='#Cv')
                     img(src='images/canvas/python.png' width='180' height='60' alt='Python')
                 li
-                  a#cavGIT(href='#cavGIT')
+                  a#cavGIT(href='#Cv')
                     img(src='images/canvas/git.png' width='150' height='60' alt='GIT')
                 li
-                  a#cavMGDB(href='#cavMGDB')
+                  a#cavMGDB(href='#Cv')
                     img(src='images/canvas/mongo.png' width='200' height='60' alt='mongodb')
                 li
-                  a#cavANG(href='#cavANG')
+                  a#cavANG(href='#Cv')
                     img(src='images/canvas/angularjs-2.png' width='80' height='90' alt='ANG')
                 li
-                  a#cavNOD(href='#cavNOD')
+                  a#cavNOD(href='#Cv')
                     img(src='images/canvas/node-2.png' width='120' height='70' alt='NODE')
                 li
-                  a#cavMAT(href='#cavMAT')
+                  a#cavMAT(href='#Cv')
                     img(src='images/canvas/mat.png' width='150' height='60' alt='MAT')
                 li
-                  a#cavD3(href='#cavD3')
+                  a#cavD3(href='#Cv')
                     img(src='images/canvas/d3.png' width='80' height='80' alt='d3')
                 li
-                  a#cavSKL(href='#cavSKL')
+                  a#cavSKL(href='#Cv')
                     img(src='images/canvas/skl.png' width='140' height='75' alt='skl')
 
       hr
@@ -266,19 +266,20 @@ block content
              a(href='http://ece.arizona.edu/announcing-eces-spring-2016-outstanding-students' target='_blank') Link
 
 
-    div#Projects.tab-pane.fade(style='border: 2px solid orange; padding: 20px;')
+    div#Projects.tab-pane.fade(style='border: 2px solid Gray; padding: 40px 20px;')
       div.container
         
         div.row
-          div.col-lg-10
-            h1(style='text-align: center; padding: 0 0 30px 0; border-bottom: 2px solid whitesmoke; color: Beige;') PROJECTS GALLARY
+          div
+            h1(style='text-align: center; padding: 0 0 30px 0; color: Beige;') PROJECTS GALLARY
 
+      hr
 
       div.container(style='margin-top: 20px;')
         div.row
-          div.col-sm-4.col-lg-3.projItem
+          div.col-sm-3.col-lg-2.projItem
             //- (style='border: 1px solid red')
-            h3 Database Implementation
+            h3 DBMS Implementation
             a.projLink(href='#Minibase' data-toggle='modal')
               div.caption
                 div.caption-content
@@ -286,8 +287,8 @@ block content
                   p View This Project
               img.img-responsive(src='images/minibase_logo.jpg' alt='minibase')
 
-          div.col-sm-4.col-lg-3.projItem
-            h3 Detect Community Structure
+          div.col-sm-3.col-lg-2.projItem
+            h3 Community Detection
             a.projLink(href='#Community' data-toggle='modal')
               div.caption
                 div.caption-content
@@ -295,7 +296,8 @@ block content
                   p View This Project
               img.img-responsive(src='images/community_logo.jpg' alt='community structure')
 
-          div.col-sm-4.col-lg-3.projItem
+
+          div.col-sm-3.col-lg-2.projItem
             h3 Seam Carving
             a.projLink(href='#Seamcarving' data-toggle='modal')
               div.caption
@@ -304,18 +306,7 @@ block content
                   p View This Project
               img.img-responsive(src='images/seamcarving-logo.jpg' alt='seam carving')
 
-        div.row
-          div.col-sm-4.col-lg-3.projItem
-            //- (style='border: 1px solid red')
-            h3 UnfoldingMaps Application
-            a.projLink(href='#Unfoldmap' data-toggle='modal')
-              div.caption
-                div.caption-content
-                  i.fa.fa-search-plus.fa-3x
-                  p View This Project
-              img.img-responsive(src='images/unfoldmap.jpg' alt='ufmap')
-
-          div.col-sm-4.col-lg-3.projItem
+          div.col-sm-3.col-lg-2.projItem
             //- (style='border: 1px solid red')
             h3 Data Compression
             a.projLink(href='#Datacomp' data-toggle='modal')
@@ -324,9 +315,20 @@ block content
                   i.fa.fa-search-plus.fa-3x
                   p View This Project
               img.img-responsive(src='images/datacomp-logo.jpg' alt='datacomp')
-            
+          
 
-          div.col-sm-4.col-lg-3.projItem
+          div.col-sm-3.col-lg-2.projItem
+            //- (style='border: 1px solid red')
+            h3 UnfoldingMaps App
+            a.projLink(href='#Unfoldmap' data-toggle='modal')
+              div.caption
+                div.caption-content
+                  i.fa.fa-search-plus.fa-3x
+                  p View This Project
+              img.img-responsive(src='images/unfoldmap.jpg' alt='ufmap')
+
+
+          div.col-sm-3.col-lg-2.projItem
             //- (style='border: 1px solid red')
             h3 Machine Learning
             a.projLink(href='#Ml' data-toggle='modal')
@@ -337,18 +339,17 @@ block content
               img.img-responsive(src='images/ml-logo.jpg' alt='ml')
             
 
-        div.row
-          div.col-sm-4.col-lg-3.projItem
+          div.col-sm-3.col-lg-2.projItem
             //- (style='border: 1px solid red')
             h3 Amazing Davis
-            a.projLink(href='#' data-toggle='modal')
+            a.projLink(href='#Amadav' data-toggle='modal')
               div.caption
                 div.caption-content
                   i.fa.fa-search-plus.fa-3x
                   p View This Project
-              img.img-responsive(src='images/ms.png' alt='amadav')
+              img.img-responsive(src='images/amadav-logo.png' alt='amadav')
 
-          div.col-sm-4.col-lg-3.projItem
+          div.col-sm-3.col-lg-2.projItem
             //- (style='border: 1px solid red')
             h3 Text Editor Application
             a.projLink(href='#Texteditor' data-toggle='modal')
@@ -358,19 +359,34 @@ block content
                   p View This Project
               img.img-responsive(src='images/texteditor-logo.jpg' alt='texteditor')
 
-          div.col-sm-4.col-lg-3.projItem
+          div.col-sm-3.col-lg-2.projItem
             //- (style='border: 1px solid red')
-            h3 Path Planing
-            a.projLink(href='#' data-toggle='modal')
+            h3 Computer Network
+            a.projLink(href='#Compnet' data-toggle='modal')
               div.caption
                 div.caption-content
                   i.fa.fa-search-plus.fa-3x
                   p View This Project
-              img.img-responsive(src='images/ms.png' alt='pp')
+              img.img-responsive(src='images/comp-network-logo.png' alt='network')
 
 
 
-    div#Contact.tab-pane.fade this is contact this is contact this is contact
+    div#Contact.tab-pane.fade(style='border: 2px solid Gray; padding-bottom: 80px;')
+      div(style='max-width: 900px; margin: auto; text-align: center;')
+        h1(style='color: Beige;') CONTACT ME 
+        p Looking forward to answering your email!
+        hr
+        form(action='#' name='message' novalidate)
+          div.form-group
+            input.form-control(type='text' placeholder='Name' name='vname')
+          div.form-group
+            input.form-control(type='email' placeholder='Email Address' name='vemail')
+          div.form-group
+            input.form-control(type='text' placeholder='Subject' name='vsubject')
+          div.form-group
+            textarea.form-control(type='text' placeholder='Message' name='vmessage' rows='4')
+          div.form-group
+            button.btn.btn-success.btn-lg(type='submit') Submit
 
 
   div.footer-below
@@ -616,8 +632,8 @@ block content
             h4 Project Demostration:
             br
             div(align='center')
-              video(style='max-width: 640px;' controls )
-                source(src='images/texteditor-720.mp4' typ='video/mp4')
+              video(style='max-width: 640px;' controls autoplay)
+                source(src='images/texteditor-720.mp4' type='video/mp4')
 
         div.modal-footer(style='clear: both;')
           button.btn.btn-default(type='button' data-dismiss='modal') Close
@@ -659,8 +675,8 @@ block content
             h4 Project Demostration:
             br
             div(align='center')
-              video(style='max-width: 640px;' controls )
-                source(src='images/unfoldmap-720.mp4' typ='video/mp4')
+              video(style='max-width: 640px;' controls autoplay)
+                source(src='images/unfoldmap-720.mp4' type='video/mp4')
 
         div.modal-footer(style='clear: both;')
           button.btn.btn-default(type='button' data-dismiss='modal') Close
@@ -787,6 +803,66 @@ block content
                 ul(style='list-style-type: circle;')
                   li Implement Metropolis-Hastings Algorithm to Infer Coordinate of of a 3-D Line from a Noisy 2-D Line.
                   li Train a Simple Neural Network to Identify Images from MNIST Dataset.
+
+
+        div.modal-footer(style='clear: both;')
+          button.btn.btn-default(type='button' data-dismiss='modal') Close
+
+  div#Amadav.modal.fade.projModal(role='dialog' aria-hidden='true')
+    div.modal-dialog
+      div.modal-content
+        div.modal-header
+          button.close(type='button' data-dismiss='modal')
+            i.fa.fa-times(style='color: white;')
+          h3 Amazing Davis - Data Visualization of GHCN (On Going)
+        div.modal-body
+          div.projDesc
+            h5
+              span Language: Javascript
+              span(style='float: right;') Duration: 08/2016 - 10/2016
+            hr
+
+            p The goal of this project is to present data in a human-friendly way.
+
+
+        div.modal-footer(style='clear: both;')
+          button.btn.btn-default(type='button' data-dismiss='modal') Close
+
+  div#Compnet.modal.fade.projModal(role='dialog' aria-hidden='true')
+    div.modal-dialog
+      div.modal-content
+        div.modal-header
+          button.close(type='button' data-dismiss='modal')
+            i.fa.fa-times(style='color: white;')
+          h3 Computer Network Implementation (On Going)
+        div.modal-body
+          div.projDesc
+            h5
+              span Language: C/C++
+              span(style='float: right;') Duration: 09/2016 - 11/2016
+            hr
+
+            p The goal of this project is to implement internet protocol and simulate router behavior in computer network.
+
+
+        div.modal-footer(style='clear: both;')
+          button.btn.btn-default(type='button' data-dismiss='modal') Close
+
+  div#TEMPLATE.modal.fade.projModal(role='dialog' aria-hidden='true')
+    div.modal-dialog
+      div.modal-content
+        div.modal-header
+          button.close(type='button' data-dismiss='modal')
+            i.fa.fa-times(style='color: white;')
+          h3 Project Title
+        div.modal-body
+          div.projDesc
+            h5
+              span Language: xxxx
+              span(style='float: right;') Duration: xx/2016 - xx/2016
+            hr
+
+            p The goal of this project is to ...
 
 
         div.modal-footer(style='clear: both;')
