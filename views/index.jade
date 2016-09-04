@@ -104,13 +104,6 @@ block content
               li B.S. Colorado State University, 2010/08 - 2014/05
 
           div.col-sm-4.col-lg-3.BriefIntro(style='border-right: 1px solid grey;')
-            h5 CAREER INTERESTS
-            ul(style='text-align: left; font-size: 13px;')
-              li Data-driven and User-interactive Web Applications
-              li Data Mining, Visuazliation and Analysis
-              li Artifitial Intellegence Related Projects
-
-          div.col-sm-4.col-lg-3.BriefIntro
             h5 HOBBIES
             ul(style='text-align: left; font-size: 13px;')
               li Snowboarding
@@ -118,6 +111,13 @@ block content
               li Mountain Biking
               li Rock Climbing
               li Photography
+
+          div.col-sm-4.col-lg-3.BriefIntro
+            h5 CAREER INTERESTS
+            ul(style='text-align: left; font-size: 13px;')
+              li Data-driven and User-interactive Web Applications
+              li Data Mining, Visuazliation and Analysis
+              li Artifitial Intellegence Related Projects
 
       hr
 
@@ -499,34 +499,37 @@ block content
             h4 Project Demostration:
             p (Left graphs are original graphs, right graphs are colored according to their community structure)
 
-            div.demoImg-sq-left
-              img.img-responsive(src='images/karate_in_smsq.jpg' alt='original graph 1')
+            div.row
+              div.col-sm-6.col-md-4.col-md-offset-2.col-lg-offset-2
+                img.img-responsive(src='images/karate_in_smsq.jpg' alt='original graph 1')
 
-            div.demoImg-sq-left
-              img.img-responsive(src='images/karate_out_smsq.jpg' alt='output graph 1')
-              
+              div.col-sm-6.col-md-4
+                img.img-responsive(src='images/karate_out_smsq.jpg' alt='output graph 1')
+                
             div(style='clear: both; margin-bottom: 30px;')
               p Fig. 1 - 
                 a(href='http://www-personal.umich.edu/~mejn/netdata/karate.zip')
                   | Zachary's Karate Club
                 | : social network of friendships between 34 members of a karate club at a US university in the 1970s.
 
-            div.demoImg-sq-left
-              img.img-responsive(src='images/lesmis_in_smsq.jpg' alt='original graph 2')
+            div.row
+              div.col-sm-6.col-md-4.col-md-offset-2.col-lg-offset-2
+                img.img-responsive(src='images/lesmis_in_smsq.jpg' alt='original graph 2')
 
-            div.demoImg-sq-left
-              img.img-responsive(src='images/lesmis_out_smsq.jpg' alt='output graph 2')
+              div.col-sm-6.col-md-4
+                img.img-responsive(src='images/lesmis_out_smsq.jpg' alt='output graph 2')
 
             div(style='clear: both; margin-bottom: 30px;')
               p Fig. 2 -
                 a(href='http://www-personal.umich.edu/~mejn/netdata/lesmis.zip') Les Misérables
                 | : coappearance network of characters in the novel Les Misérables.
             
-            div.demoImg-sq-left
-              img.img-responsive(src='images/commu_in_smsq.jpg' alt='original graph 3')
+            div.row
+              div.col-sm-6.col-md-4.col-md-offset-2.col-lg-offset-2
+                img.img-responsive(src='images/commu_in_smsq.jpg' alt='original graph 3')
 
-            div.demoImg-sq-left
-              img.img-responsive(src='images/commu_out_smsq.jpg' alt='output graph 3')
+              div.col-sm-6.col-md-4
+                img.img-responsive(src='images/commu_out_smsq.jpg' alt='output graph 3')
 
             div(style='clear: both; margin-bottom: 30px;')
               p Fig. 3 - 
