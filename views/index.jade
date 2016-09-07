@@ -6,13 +6,14 @@ block content
   script(src="javascripts/tagCanvasCloud.js" type="text/javascript")
   
   
-  div#pageHead.container-fluid(style='height: 80px;')
-    nav.navbar.navbar-default.navbar-fixed-top(style='background-color: WhiteSmoke;')
+  div#pageHead.container-fluid(style='height: 160px;')
+    nav.navbar.navbar-inverse.navbar-fixed-top
       div.navbar-header
-        a.navbar-brand(href='#pageHead' style='font-size: 40px; font-weight: bold; color: #555;') NENGYUN ZHANG
+        a#NavBrand.navbar-brand(href='#pageHead' style='font-size: 40px; font-weight: bold; color: #70AB01;') NENGYUN 
+          span(style='color: #9C9C9C') ZHANG
 
 
-        button.navbar-toggle(type='button' data-toggle='collapse' data-target='#navMenu')
+        button#NavBtn.navbar-toggle(type='button' data-toggle='collapse' data-target='#navMenu' style='margin-top: 32px;')
           span.sr-only Navigation
           span.icon-bar
           span.icon-bar
@@ -20,46 +21,46 @@ block content
 
       div#navMenu.collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-right
-          li.active
-            a(href='#Home' data-toggle='tab' style='color: #444; font-size: 15px;') HOME
-          li
-            a(href='#Cv' data-toggle='tab' style='color: #444; font-size: 15px;') CV
-          li
-            a(href='#Projects' data-toggle='tab' style='color: #444; font-size: 15px;') PROJECTS
-          li
-            a(href='#Contact' data-toggle='tab' style='color: #444; font-size: 15px;') CONTACT
+          li#NavHome.active.NavList
+            a(href='#Home' data-toggle='tab' style='color: #70AB01; font-size: 15px;') HOME
+          li#NavCv.NavList
+            a(href='#Cv' data-toggle='tab' style='color: #70AB01; font-size: 15px;') CV
+          li.NavList
+            a(href='#Projects' data-toggle='tab' style='color: #70AB01; font-size: 15px;') PROJECTS
+          li.NavList
+            a(href='#Contact' data-toggle='tab' style='color: #70AB01; font-size: 15px;') CONTACT
 
 
 
   div.tab-content(style='max-width: 1200px; margin: auto;')
 
-    div#Home.tab-pane.fade.in.active(style='border: 2px solid Gray; padding: 40px 20px;')
+    div#Home.tab-pane.fade.in.active(style='border: 1px solid #E3E3E3; padding: 40px 20px; background-color: #F8F8F8')
       div.container
         div.row
-          div.col-sm-6.col-md-5.col-lg-4.thumbnail
+          div#HomePort.col-sm-6.col-md-5.col-lg-4.thumbnail
             img.img-responsive(src='images/myport.jpg' alt='my port')
-          div.col-sm-5.col-sm-offset-1.col-md-5.col-md-offset-1.col-lg-6(style='text-align: center; color: GhostWhite; font-family: Osaka')
-            h4(style='margin-top: 0px; color: khaki;')
-              b Holla Vistor !
-            h4(style='margin-top: 0px; color: khaki;')
-              b My Name is Nengyun Zhang and I'm . . .
-            h2(style='margin-bottom: 0px;') A Software Developer
-            p(style='color: Chocolate; margin-top: 0px; font-size: 12px;') Java, C/C++, Python, OOP, Database
+          div#HomeIntro.col-sm-5.col-md-5.col-lg-5(style='text-align: left; color: #445566; font-family: Osaka; margin-top: 0px;')
+            h4(style='margin-top: 0px; color: #707070;') Holla! This is Nengyun Zhang
+            h4(style='margin-top: 0px; color: #707070;') I'm Available for Hire and I'm . . .
+            h1(style='margin-bottom: 0px;') 
+              b A Software Developer
+            p(style='color: #778899; margin-top: 0px; font-size: 12px;') Java, C/C++, Python, OOP, Algorithm Design
 
-            h2(style='margin-bottom: 0px;') A Web Developer
-            p(style='color: Chocolate; margin-top: 0px; font-size: 12px;') Front-end,  Server, Internet Protocols, MongoDB
+            h1(style='margin-bottom: 0px;') 
+              b A Web Developer
+            p(style='color: #778899; margin-top: 0px; font-size: 12px;') Front-end,  Server, Internet Protocols, Database
 
-            h2(style='margin-bottom: 0px;') A Data Engineer
-            p(style='color: Chocolate; margin-top: 0px; font-size: 12px;') Machine Learning, Information Retrieval, Data Visualization
+            h1(style='margin-bottom: 0px;') 
+              b A Data Engineer
+            p(style='color: #778899; margin-top: 0px; font-size: 12px;') Machine Learning, Information Retrieval, Data Visualization
             
-            h2(style='color: gold;') 
-              b I'm AVAILABLE for HIRE!
+            button#HomeBtn.btn.btn-lg(type='button' style='background-color: #70AB01; width:180px; height: 40px; color: #fcfcfc; font-size: 15px; margin: 10px 0 10px 0;' href='#Cv' data-toggle='tab') MY CV
 
             p
-              span(style='margin-right: 20px;').glyphicon.glyphicon-envelope  GREGSEEKJOBS@GMAIL.COM  
-              span.glyphicon.glyphicon-earphone  (720)393-0168
+              span(style='margin: 10px 20px 0 0; color: #707070;').glyphicon.glyphicon-envelope  GREGSEEKJOBS@GMAIL.COM  
+              span(style='color: #707070;').glyphicon.glyphicon-earphone  (720)393-0168
             
-            span(style='color: floralwhite;') More: 
+            span(style='color: #707070;') More: 
             a(href='https://www.linkedin.com/in/nengyun-zhang-88715841' target='_blank' style='margin-right: 15px; font-size: 18px;')
               span(style='margin-left: 10px;').fa.fa-linkedin
             a(href='https://github.com/canigithub' target='_blank' style='margin-right: 15px; font-size: 18px;')
@@ -69,16 +70,18 @@ block content
             a(href='https://plus.google.com/u/0/' target='_blank' style='margin-right: 15px; font-size: 18px;')
               span.fa.fa-google-plus
 
+      br
       hr
+      br
 
-      div.container(style='margin-top: 20px;')
+      div.container
         div.row
-          div.col-sm-4.col-lg-3.BriefIntro(style='border-right: 1px solid grey;')
+          div.col-sm-4.col-lg-3.BriefIntro(style='border-right: 1px solid #E3E3E3;')
             h5 RECENT AWARDS
             ul
               li UA College of Engineering Outstanding Graduate Teaching Assistant - 2016
 
-          div.col-sm-4.col-lg-3.BriefIntro(style='border-right: 1px solid grey;')
+          div.col-sm-4.col-lg-3.BriefIntro(style='border-right: 1px solid #E3E3E3;')
             h5 FAVORITE QUOTE
             q The soul that sees beauty may sometimes walk alone.
             br
@@ -91,19 +94,20 @@ block content
               li User Interactive Web App for Data Visualization of 
                 a(href='https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn') Global Historical Climatology Network
               li Detect Community Structure in Social Networks
+              li Database Manage System Implementation
  
 
       hr
 
       div.container(style='margin-top: 20px;')
         div.row
-          div.col-sm-4.col-lg-3.BriefIntro(style='border-right: 1px solid grey;')
+          div.col-sm-4.col-lg-3.BriefIntro(style='border-right: 1px solid #E3E3E3;')
             h5 EDUCATION
             ul(style='text-align: left; font-size: 13px;')
               li M.S. The University of Arizona, 2014/08 - 2016/12
               li B.S. Colorado State University, 2010/08 - 2014/05
 
-          div.col-sm-4.col-lg-3.BriefIntro(style='border-right: 1px solid grey;')
+          div.col-sm-4.col-lg-3.BriefIntro(style='border-right: 1px solid #E3E3E3;')
             h5 HOBBIES
             ul(style='text-align: left; font-size: 13px;')
               li Snowboarding
@@ -119,22 +123,20 @@ block content
               li Data Mining, Visuazliation and Analysis
               li Artifitial Intellegence Related Projects
 
-      hr
-
-    div#Cv.tab-pane.fade(style='border: 2px solid Gray; padding: 40px;')
+    div#Cv.tab-pane.fade(style='border: 1px solid #E3E3E3; padding: 40px;')
       div.container
         div.row
           div.col-sm-6.col-md-6.col-lg-5
-            h1(style='margin-top: 0px; color: peru;')
+            h1(style='margin-top: 0px; color: #70AB01; font-size: 50px;')
               b CV
             
             hr
 
-            h4(style='color: PaleGoldenRod') Objective
-            p Seek a Full-time Position in Area of Software Development, Web Application Development, Data Engineering. 
-            p Prefer Positions Require Machine Learning Knowledge & Skills.
+            h4 Objective
+            p Seek a Full-time Position in Area of Software Development, Web Application Development and Data Engineering. 
+            p Prefer Positions Require Machine Learning Background.
             hr
-            h4(style='color: PaleGoldenRod') Contact
+            h4 Contact
             p
               span.glyphicon.glyphicon-envelope  GREGSEEKJOBS@GMAIL.COM  
             p
@@ -166,7 +168,7 @@ block content
 
           div.col-sm-6.col-lg-5
             div#myCanvasContainer(style='align: center !important;')
-              canvas#myCanvas.img-responsive(width='600' height='450' style='')
+              canvas#myCanvas.img-responsive(width='500' height='500' style='')
                 p Canvas can't be displayed in your browser.
             div#tags(style='display: none;')
               ul
@@ -190,7 +192,7 @@ block content
                     img(src='images/canvas/cpp.png' width='120' height='70' alt='CPP')
                 li
                   a#cavC(href='#Cv')
-                    img(src='images/canvas/c.png' width='80' height='80' alt='C')
+                    img(src='images/canvas/c-2.png' width='80' height='80' alt='C')
                 li
                   a#cavPY(href='#Cv')
                     img(src='images/canvas/python.png' width='180' height='60' alt='Python')
@@ -205,13 +207,13 @@ block content
                     img(src='images/canvas/angularjs-2.png' width='80' height='90' alt='ANG')
                 li
                   a#cavNOD(href='#Cv')
-                    img(src='images/canvas/node-2.png' width='120' height='70' alt='NODE')
+                    img(src='images/canvas/node.png' width='120' height='70' alt='NODE')
                 li
                   a#cavMAT(href='#Cv')
                     img(src='images/canvas/mat.png' width='150' height='60' alt='MAT')
                 li
                   a#cavD3(href='#Cv')
-                    img(src='images/canvas/d3.png' width='80' height='80' alt='d3')
+                    img(src='images/canvas/d3.png' width='65' height='65' alt='d3')
                 li
                   a#cavSKL(href='#Cv')
                     img(src='images/canvas/skl.png' width='140' height='75' alt='skl')
@@ -240,7 +242,7 @@ block content
           li
             div
               span.SchoLogo(style='float: right;')
-                img(src='images/csu-logo.png' alt='csu-logo' width='200' height='70')
+                img(src='images/csu-logo.png' alt='csu-logo' width='200' height='80')
               p Colorado State University, Electrical and Computer Engineering, Fort Collins, CO
               p
                 b Bachelor of Science
@@ -266,12 +268,12 @@ block content
              a(href='http://ece.arizona.edu/announcing-eces-spring-2016-outstanding-students' target='_blank') Link
 
 
-    div#Projects.tab-pane.fade(style='border: 2px solid Gray; padding: 40px 20px;')
+    div#Projects.tab-pane.fade(style='border: 1px solid #E3E3E3; padding: 40px 20px;')
       div.container
         
         div.row
           div
-            h1(style='text-align: center; padding: 0 0 30px 0; color: Beige;') PROJECTS GALLARY
+            h1(style='text-align: center; padding: 0 0 30px 0; color: #70AB01;') PROJECTS GALLARY
 
       hr
 
@@ -371,26 +373,31 @@ block content
 
 
 
-    div#Contact.tab-pane.fade(style='border: 2px solid Gray; padding-bottom: 80px;')
+    div#Contact.tab-pane.fade(style='border: 1px solid #E3E3E3; padding-bottom: 80px;')
       div(style='max-width: 900px; margin: auto; text-align: center;')
-        h1(style='color: Beige;') CONTACT ME 
-        p Looking forward to answering your email!
+        h1(style='color: #70AB01;') CONTACT ME 
+        p Looking forward to answering your message!
         hr
         form(action='/submitmsg' method='post' name='submitmsg' novalidate)
           div.form-group
-            input.form-control(type='text' placeholder='Name' name='vname')
+            input.form-control(type='text' placeholder='Name' name='vname' style='background-color: #f0f0f0;')
           div.form-group
-            input.form-control(type='email' placeholder='Email Address' name='vemail')
+            input.form-control(type='email' placeholder='Email Address' name='vemail' style='background-color: #f0f0f0;')
           div.form-group
-            input.form-control(type='text' placeholder='Subject' name='vsubject')
+            input.form-control(type='text' placeholder='Subject' name='vsubject' style='background-color: #f0f0f0;')
           div.form-group
-            textarea.form-control(type='text' placeholder='Message' name='vmessage' rows='4')
+            textarea.form-control(type='text' placeholder='Message' name='vmessage' rows='4' style='background-color: #f0f0f0;')
           div.form-group
             button.btn.btn-success.btn-lg(type='submit') Submit
 
+  div.footer-above
+    div.container(style='text-align: center; margin-top: 40px; margin-bottom: 10px; ')
+      
+      span(style='margin-right: 10px; ') Email: GREGSEEKJOBS@GMAIL.COM  
+      span Cell: (720)393-0168 
 
   div.footer-below
-    div.container(style='text-align: center; margin-top: 40px; margin-bottom: 40px;')
+    div.container(style='text-align: center; margin-top: 10px; margin-bottom: 40px;')
       div.row Copyright © Nengyun Zhang 2016
 
 
@@ -399,8 +406,8 @@ block content
       div.modal-content
         div.modal-header
           button.close(type='button' data-dismiss='modal')
-            i.fa.fa-times(style='color: white;')
-          h3 Database Implementation - Minibase
+            i.fa.fa-times(style='color: #223344;')
+          h3 Database Manage System Implementation - Minibase
         div.modal-body
           div.projDesc Collaboration of 2
             h5
@@ -454,14 +461,14 @@ block content
                   li Scan Cursor can be Positioned to Any Record within the File.
 
         div.modal-footer
-          button.btn.btn-default(type='button' data-dismiss='modal') Close
+          button.btn.btn-default(type='button' data-dismiss='modal' style='background-color: #e0e0e0;') Close
 
   div#Community.modal.fade.projModal(role='dialog' aria-hidden='true')
     div.modal-dialog
       div.modal-content
         div.modal-header
           button.close(type='button' data-dismiss='modal')
-            i.fa.fa-times(style='color: white;')
+            i.fa.fa-times(style='color: #223344;')
           h3 Detect Community Stucture In Social Networks
         div.modal-body
           div.projDesc
@@ -536,7 +543,7 @@ block content
                 a(href='http://www-personal.umich.edu/~mejn/netdata/netscience.zip') Coauthorships in network science
                 | : coauthorship network of scientists working on network theory and experiment.
         div.modal-footer
-          button.btn.btn-default(type='button' data-dismiss='modal') Close
+          button.btn.btn-default(type='button' data-dismiss='modal' style='background-color: #e0e0e0;') Close
 
 
   div#Seamcarving.modal.fade.projModal(role='dialog' aria-hidden='true')
@@ -544,7 +551,7 @@ block content
       div.modal-content
         div.modal-header
           button.close(type='button' data-dismiss='modal')
-            i.fa.fa-times(style='color: white;')
+            i.fa.fa-times(style='color: #223344;')
           h3 Seam Carving
         div.modal-body
           div.projDesc
@@ -594,14 +601,14 @@ block content
                 
 
         div.modal-footer(style='clear: both;')
-          button.btn.btn-default(type='button' data-dismiss='modal') Close
+          button.btn.btn-default(type='button' data-dismiss='modal' style='background-color: #e0e0e0;') Close
 
   div#Texteditor.modal.fade.projModal(role='dialog' aria-hidden='true')
     div.modal-dialog
       div.modal-content
         div.modal-header
           button.close(type='button' data-dismiss='modal')
-            i.fa.fa-times(style='color: white;')
+            i.fa.fa-times(style='color: #223344;')
           h3 Text Editor
         div.modal-body
           div.projDesc
@@ -635,11 +642,11 @@ block content
             h4 Project Demostration:
             br
             div(align='center')
-              video(style='max-width: 640px;' controls autoplay)
+              video(style='max-width: 640px;' controls)
                 source(src='images/texteditor-720.mp4' type='video/mp4')
 
         div.modal-footer(style='clear: both;')
-          button.btn.btn-default(type='button' data-dismiss='modal') Close
+          button.btn.btn-default(type='button' data-dismiss='modal' style='background-color: #e0e0e0;') Close
 
 
   div#Unfoldmap.modal.fade.projModal(role='dialog' aria-hidden='true')
@@ -647,7 +654,7 @@ block content
       div.modal-content
         div.modal-header
           button.close(type='button' data-dismiss='modal')
-            i.fa.fa-times(style='color: white;')
+            i.fa.fa-times(style='color: #223344;')
           h3 Global Earthquake Data Visualization With Unfolding Maps
         div.modal-body
           div.projDesc
@@ -678,11 +685,11 @@ block content
             h4 Project Demostration:
             br
             div(align='center')
-              video(style='max-width: 640px;' controls autoplay)
+              video(style='max-width: 640px;' controls)
                 source(src='images/unfoldmap-720.mp4' type='video/mp4')
 
         div.modal-footer(style='clear: both;')
-          button.btn.btn-default(type='button' data-dismiss='modal') Close
+          button.btn.btn-default(type='button' data-dismiss='modal' style='background-color: #e0e0e0;') Close
 
 
   div#Datacomp.modal.fade.projModal(role='dialog' aria-hidden='true')
@@ -690,7 +697,7 @@ block content
       div.modal-content
         div.modal-header
           button.close(type='button' data-dismiss='modal')
-            i.fa.fa-times(style='color: white;')
+            i.fa.fa-times(style='color: #223344;')
           h3 Practical Data Compression Algorithm
         div.modal-body
           div.projDesc
@@ -753,7 +760,7 @@ block content
               br
 
         div.modal-footer(style='clear: both;')
-          button.btn.btn-default(type='button' data-dismiss='modal') Close
+          button.btn.btn-default(type='button' data-dismiss='modal' style='background-color: #e0e0e0;') Close
 
 
   div#Ml.modal.fade.projModal(role='dialog' aria-hidden='true')
@@ -761,7 +768,7 @@ block content
       div.modal-content
         div.modal-header
           button.close(type='button' data-dismiss='modal')
-            i.fa.fa-times(style='color: white;')
+            i.fa.fa-times(style='color: #223344;')
           h3 Machine Learning Algorithms Implementation Practice
         div.modal-body
           div.projDesc
@@ -809,14 +816,14 @@ block content
 
 
         div.modal-footer(style='clear: both;')
-          button.btn.btn-default(type='button' data-dismiss='modal') Close
+          button.btn.btn-default(type='button' data-dismiss='modal' style='background-color: #e0e0e0;') Close
 
   div#Amadav.modal.fade.projModal(role='dialog' aria-hidden='true')
     div.modal-dialog
       div.modal-content
         div.modal-header
           button.close(type='button' data-dismiss='modal')
-            i.fa.fa-times(style='color: white;')
+            i.fa.fa-times(style='color: #223344;')
           h3 Amazing Davis - Data Visualization of GHCN (On Going)
         div.modal-body
           div.projDesc
@@ -829,14 +836,14 @@ block content
 
 
         div.modal-footer(style='clear: both;')
-          button.btn.btn-default(type='button' data-dismiss='modal') Close
+          button.btn.btn-default(type='button' data-dismiss='modal' style='background-color: #e0e0e0;') Close
 
   div#Compnet.modal.fade.projModal(role='dialog' aria-hidden='true')
     div.modal-dialog
       div.modal-content
         div.modal-header
           button.close(type='button' data-dismiss='modal')
-            i.fa.fa-times(style='color: white;')
+            i.fa.fa-times(style='color: #223344;')
           h3 Computer Network Implementation (On Going)
         div.modal-body
           div.projDesc
@@ -849,14 +856,14 @@ block content
 
 
         div.modal-footer(style='clear: both;')
-          button.btn.btn-default(type='button' data-dismiss='modal') Close
+          button.btn.btn-default(type='button' data-dismiss='modal' style='background-color: #e0e0e0;') Close
 
   div#TEMPLATE.modal.fade.projModal(role='dialog' aria-hidden='true')
     div.modal-dialog
       div.modal-content
         div.modal-header
           button.close(type='button' data-dismiss='modal')
-            i.fa.fa-times(style='color: white;')
+            i.fa.fa-times(style='color: #223344;')
           h3 Project Title
         div.modal-body
           div.projDesc
@@ -869,9 +876,10 @@ block content
 
 
         div.modal-footer(style='clear: both;')
-          button.btn.btn-default(type='button' data-dismiss='modal') Close
+          button.btn.btn-default(type='button' data-dismiss='modal' style='background-color: #e0e0e0;') Close
 
   
+  script(src="javascripts/jsfile.js" type="text/javascript")
   script(src="javascripts/jquery.tagcanvas.min.js" type="text/javascript")
 
 

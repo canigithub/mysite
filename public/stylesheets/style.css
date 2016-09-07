@@ -3,13 +3,27 @@
 }
 
 body {
-  background-color: #353535;
-  color: floralwhite;
+  background-color: #fff;
+  color: black;
 }
 
 a {
-  color: LightSteelBlue;
+  color: DarkKhaki;
 }
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 100px;
+    height: 100px;
+    padding-top: 0;
+}
+
+/*#navMenu .in {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}*/
 
 #navMenu ul li {
   padding-right: 10px;
@@ -19,8 +33,9 @@ a {
 #Home > .container:nth-of-type(3) h5 {
   text-align: center;
   /*color: DarkTurquoise;*/
-  color: CornflowerBlue;
+  color: #70AB01;
   font-size: 18px;
+  font-weight: normal;
 }
 
 #Home > .container:nth-of-type(2) .col-sm-4,
@@ -28,12 +43,24 @@ a {
   min-height: 160px;
 }
 
+#Cv h4 {
+  color: #343434;
+}
+
+#Cv p {
+  color: #454545;
+}
+
 #Cv h3 {
-  color: wheat;
+  color: #70AB01;
 }
 
 #Cv h5 {
-  color: PaleGoldenRod;
+  color: #343434;
+}
+
+.SchoLogo {
+  padding-right: 140px !important;
 }
 
 #Projects .projItem {
@@ -45,7 +72,7 @@ a {
 
 #Projects .projItem h3 {
   text-align: center;
-  color: lightskyblue;
+  color: #556677;
   /*color: MediumAquaMarine;*/
   font-size: 15px;
   /*height: 40px;*/
@@ -96,18 +123,20 @@ a {
 }
 
 .modal-header {
-  background-color: midnightblue;
+  background-color: #cdcdcd;
 }
 
 .modal-header h3 {
   text-align: center;
+  color: #70AB01;
+  font-weight: bold;
 }
 
 .modal-content {
   height: auto;
   min-height: 100%;
   border-radius: 0;
-  background-color: #556677;
+  background-color: #efefef;
 
 }
 
@@ -126,7 +155,7 @@ a {
 }
 
 .projDesc h5 {
-  color: PaleGoldenRod;
+  color: #334455;
 }
 
 
